@@ -13,8 +13,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: Set up Yosys and iverilog
       run: sudo apt-get install yosys iverilog -y
-    - name: Run yosys test 1
-      run: yosys -p "hierarchy -check; proc;" ./pipeline/riscv.v
+    # - name: Run yosys test 1
+    #   run: yosys -p "hierarchy -check; proc;" ./pipeline/riscv.v
     - name: Run yosys test 2
       run: yosys -p "hierarchy -check; proc;" ./single/riscv.v
     - name: Run logic test

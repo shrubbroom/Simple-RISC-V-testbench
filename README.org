@@ -30,8 +30,17 @@ To use this testbench:
    #+DOWNLOADED: screenshot @ 2020-12-18 22:31:32
    [[file:Simple-RISC-V-testbench/2020-12-18_22-31-32_screenshot.png]]
    5. Commit, push and wait for the result.
-   6. Change the file [[.github/workflows/yosys.yaml][yosys.yaml]] and [[./testbench.sh][testbench.sh]] to
-      change the test target (disable pipeline test, etc.).
+   6. Change the file [[.github/workflows/yosys.yaml][yosys.yaml]] and [[./testbench.sh][testbench.sh]] to change the test
+      target (disable pipeline test, etc.).  For example, you want to
+      close pipeline check, just comment related line:
+
+#+DOWNLOADED: screenshot @ 2020-12-18 23:05:14
+[[file:Simple-RISC-V-testbench/2020-12-18_23-05-14_screenshot.png]]
+
+#+DOWNLOADED: screenshot @ 2020-12-18 23:05:40
+[[file:Simple-RISC-V-testbench/2020-12-18_23-05-40_screenshot.png]]
+
+
 ** Something more
    If you can pass all the test cases, your HDL sources is *likely* to
    be correct. If you find any problem with the testbench or have some
