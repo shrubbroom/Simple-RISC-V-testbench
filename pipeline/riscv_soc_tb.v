@@ -18,12 +18,6 @@ module riscv_soc_tb();
    end
 
    initial begin
-      $dumpfile("riscv_soc_tb.vcd");
-      $dumpvars(0, riscv_soc_tb);
-      for(i = 0; i <= 31; i = i + 1)
-        $dumpvars(0, riscv_soc_tb.riscv0.RF.register_file[i]);
-      for(i = 0; i <= 3; i = i + 1)
-        $dumpvars(0, riscv_soc_tb.data_mem0.data[i]);
       rst = 1'b1;
       #300    rst= 1'b0;
       #5000000;
