@@ -8,16 +8,14 @@ an emulator written in C.
 
 To use this testbench:
    1. Fork this repository.
-   2. Clone this repository to your machine and modify the files
-      single/riscv_soc_tb.v and pipeline/riscv_soc_tb.v
-      1.
+   2. Clone the forked repository to your host machine and modify the
+      files single/riscv_soc_tb.v and pipeline/riscv_soc_tb.v
       #+BEGIN_SRC verilog
          for (i = 0; i <= 1023; i = i+1) begin
             $fwrite(handle, "%h\n", riscv_soc_tb.data_mem0.data[i]); // change the riscv_soc_tb.data_mem0.data[i] to the instance of your data memory
          end
       #+END_SRC
 
-      2.
       #+BEGIN_SRC verilog
       for (i = 1; i <= 31; i = i+1) begin
          $fwrite(handle, "%h\n", riscv_soc_tb.riscv0.RF.register_file[i]); // change the riscv_soc_tb.riscv0.RF.register_file[i] to the instance of your register file
@@ -26,5 +24,10 @@ To use this testbench:
    3. Move your source file to single/ and pipeline/
    4. Commit, push and wait for the result.
 
-** Caution
+** Something more
+If you can pass all the test cases, your HDL sources is *very likely*
+to be correct. If you find any problem with the testbench or have some
+good(vicious) test case, please do not hesitate to contact me, raise a
+issue or make a pull request directly.
+
 This repository is ported with the GPLv3 License.
