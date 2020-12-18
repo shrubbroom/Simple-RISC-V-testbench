@@ -2,7 +2,7 @@
 A public testbench for RISC-V design (MR329). The directory [[./test/][test]]
 includes all the test cases in assembly. The directory [[./emulator/][emulator]]
 includes the source code of an emulator written in C++. The directory
-[[./assembler/][assembler]] includes the source code of assembler.
+[[./assembler/][assembler]] includes the binary ELF file of assembler.
 ** How to use?
 This is an automatic testbench for the course design of MR329
 (Computer Architecture). It use the GitHub Action as the test
