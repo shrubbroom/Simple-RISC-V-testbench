@@ -15,7 +15,7 @@ for src in ${srcs[*]}; do
     echo
     rm -rf run
     mkdir run
-    cp "$project_root/assembler/assembler.c" run/
+    cp "$project_root/assembler/assembler" run/
     cp ../$src/*.v run/
     cp "$project_root/emulator/emulator.cpp" run/
     cp ../test/*.asm run/
@@ -23,8 +23,8 @@ for src in ${srcs[*]}; do
     echo "Begin test"
     echo "Compiling emulator..."
     g++ -o emulator ./emulator.cpp
-    echo "Compiling assembler..."
-    gcc -o assembler ./assembler.c
+    # echo "Compiling assembler..."
+    # gcc -o assembler ./assembler.c
     for a in *.asm; do
         for i in {1..20}; do echo -n "-"; done
         echo

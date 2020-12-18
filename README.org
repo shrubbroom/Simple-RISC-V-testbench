@@ -47,7 +47,5 @@ To use this testbench:
    good(vicious) test case, please do not hesitate to contact me,
    raise an issue or make a pull request directly.
 
-   This repository comes with the GPLv3 license. However, since I am
-   not the author of the assembler, licensing it with GPLv3 may not be
-   appropriate. On the contrary, The rest part of this repository
-   is licensed with GPLv3.
+   This repository comes with the GPLv3 license. All of its part
+   except for the binary assembler is restricted by the GPLv3 license.
