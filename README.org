@@ -10,11 +10,11 @@ environment and compare your HDL source files' simulation result with
 an emulator written in C.
 
 To use this testbench:
-   1. Fork this repository. If you don't wish a public repository
-      containing your source code, initialize an empty private
-      repository and copy all the stuff into your new repository. Note
-      that you should follow GPLv3, i.e. don't forget to include the
-      license in your new repository.
+   1. Fork this repository. If you don't wish to have a public
+      repository containing your source code, initialize an empty
+      private repository and copy all the stuff into your new
+      repository. Note that you should follow GPLv3, i.e. don't forget
+      to include the license in your new repository.
    2. Clone the forked repository to your host machine and modify the
       files [[./single/riscv_soc_tb.v][testbench in single]] and [[pipeline/riscv_soc_tb.v][testbench in pipeline]]
       #+BEGIN_SRC verilog
