@@ -534,7 +534,7 @@ int main(int argc, char *argv[]) {
       if (*descriptor[OP] != BEQ && *descriptor[OP] != BLT &&
           *descriptor[OP] != JAL)
         *(pc) = *(pc) + 4;
-      // DEBUG_print_all(Register_File, pc, instruction, descriptor);
+      DEBUG_print_all(Register_File, pc, instruction, descriptor);
     }
   }
 }
@@ -560,6 +560,7 @@ void RISC_V_parser(signed int *instruction, signed int **descriptor) {
     RISC_V_store_parser(instruction, descriptor);
     break;
   default:
+    cerr << "fatal error in opcode parse, opcode: "<<bitset<7> (*instruction & 0b1111111)<<'\n';
     exit(1);
   }
 }
@@ -598,6 +599,7 @@ void RISC_V_arithmetic_parser(signed int *instruction, int **descriptor) {
     break;
   }
   default:
+    cerr << "fatal error in func3 parse";
     exit(1);
   }
 }
