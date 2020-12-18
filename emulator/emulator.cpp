@@ -534,7 +534,7 @@ int main(int argc, char *argv[]) {
       if (*descriptor[OP] != BEQ && *descriptor[OP] != BLT &&
           *descriptor[OP] != JAL)
         *(pc) = *(pc) + 4;
-      // DEBUG_print_all(Register_File, pc, instruction, descriptor);
+      DEBUG_print_all(Register_File, pc, instruction, descriptor);
     }
   }
 }
