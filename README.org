@@ -13,8 +13,9 @@ To use this testbench:
    1. Fork this repository. If you don't wish to have a public
       repository containing your source code, initialize an empty
       private repository and copy all the stuff into your new
-      repository. Note that you should follow GPLv3, i.e. don't forget
-      to include the license in your new repository.
+      repository. For more reference, see [[https://gist.github.com/0xjac/85097472043b697ab57ba1b1c7530274][private_fork]]. Note that you
+      should follow GPLv3, i.e. don't forget to include the license in
+      your new repository.
    2. Clone the forked repository to your host machine and modify the
       files [[./single/riscv_soc_tb.v][testbench in single]] and [[pipeline/riscv_soc_tb.v][testbench in pipeline]]
       #+BEGIN_SRC verilog
