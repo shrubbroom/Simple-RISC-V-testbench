@@ -10,19 +10,21 @@ To use this testbench:
    1. Fork this repository.
    2. Clone this repository to your machine and modify the files
       single/riscv_soc_tb.v and pipeline/riscv_soc_tb.v
+      1.
       #+BEGIN_SRC verilog
          for (i = 0; i <= 1023; i = i+1) begin
             $fwrite(handle, "%h\n", riscv_soc_tb.data_mem0.data[i]); // change the riscv_soc_tb.data_mem0.data[i] to the instance of your data memory
          end
       #+END_SRC
 
+      2.
       #+BEGIN_SRC verilog
       for (i = 1; i <= 31; i = i+1) begin
          $fwrite(handle, "%h\n", riscv_soc_tb.riscv0.RF.register_file[i]); // change the riscv_soc_tb.riscv0.RF.register_file[i] to the instance of your register file
       end
       #+END_SRC
-    3. Move your source file to single/ and pipeline/
-    4. Commit, push and wait.
+   3. Move your source file to single/ and pipeline/
+   4. Commit, push and wait for the result.
 
 ** Caution
 This repository is ported with the GPLv3 License.
