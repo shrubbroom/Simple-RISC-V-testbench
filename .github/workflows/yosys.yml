@@ -17,5 +17,7 @@ jobs:
     #   run: yosys -p "hierarchy -check; proc;" ./pipeline/riscv.v
     - name: Run yosys test 2
       run: yosys -p "hierarchy -check; proc;" ./single/riscv.v
+    - name: Make logic test executable
+      run: chmod +x ./testbench.sh
     - name: Run logic test
       run: ./testbench.sh
