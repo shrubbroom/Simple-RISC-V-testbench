@@ -34,6 +34,7 @@ for src in ${srcs[*]}; do
         rm -f data_mem_emu.txt data_mem_verilog.txt register_file_emu.txt register_file_verilog.txt test_data_mem.txt
         mv $a assembly.asm
         echo "Compiling ASM..."
+        chmod +x ./assembler
         echo | ./assembler > /dev/null
         mv assembly.asm $a
         for i in {1..1024}; do echo "00" >> test_data_mem.txt; done
