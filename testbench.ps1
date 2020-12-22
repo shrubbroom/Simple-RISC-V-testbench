@@ -75,7 +75,7 @@ for ($k=0; $k -lt $srcs.length; $k++)
 		{
 		write-host "-" -NoNewLine
 		}
-        writre-host
+        write-host
     }
     cd ../
     write-host "Testing $argu done"
@@ -85,5 +85,5 @@ for ($k=0; $k -lt $srcs.length; $k++)
 	write-host "-" -NoNewLine
 	}
 }
-
-	
+Write-Host "Press any key to continue..."
+$Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
