@@ -31,15 +31,14 @@ To use this testbench:
       #+END_SRC
    3. Move your source file to [[./single/][single]] and [[./pipeline/][pipeline]]
    4. Properly place =`include= in each file to make a full hierarchy
-      relation. e.g.
-   #+DOWNLOADED: screenshot @ 2020-12-18 22:31:32
-   [[file:Simple-RISC-V-testbench/2020-12-18_22-31-32_screenshot.png]]
-
+      relation. See the illustration below.
    5. Commit, push and wait for the result.
    6. Change the file [[.github/workflows/yosys.yaml][yosys.yaml]] and [[./testbench.sh][testbench.sh]] to change the test
       target (disable pipeline test, etc.).  For example, you want to
       close pipeline check, just comment related line:
 
+   #+DOWNLOADED: screenshot @ 2020-12-18 22:31:32
+   [[file:Simple-RISC-V-testbench/2020-12-18_22-31-32_screenshot.png]]
 #+DOWNLOADED: screenshot @ 2020-12-18 23:05:14
 [[file:Simple-RISC-V-testbench/2020-12-18_23-05-14_screenshot.png]]
 
